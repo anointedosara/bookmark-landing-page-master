@@ -394,6 +394,7 @@ html {
     }
     .wrapper {
         max-width: 400px;
+        width: 100%;
         margin: 0 auto;
         padding: 0 30px;
     }
@@ -403,16 +404,19 @@ html {
         font-weight: 400;
         margin: 0;
         transition: 0.3s all ease;
+        cursor: pointer;
     }
     .drop p:hover {
         color: hsl(0, 94%, 66%);
     }
     .open {
         display: block;
+        cursor: pointer;
     }
     .close {
         display: none;
         z-index: 10000000000000;
+        cursor: pointer;
     }
     .drop-div {
         border: 2px solid white;
@@ -534,6 +538,7 @@ html {
 
 .div6 {
     max-width: 600px;
+    width: 100%;
     margin: 80px auto 60px auto;
     text-align: center;
 }
@@ -555,6 +560,7 @@ html {
 
 .div7 {
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -589,6 +595,7 @@ html {
 @media screen and (max-width: 1320px) {
     .div6 {
         max-width: 630px;
+        width: 100%;
         margin: 80px auto 60px auto;
         text-align: center;
     }
@@ -607,6 +614,7 @@ html {
     }
     .div7 {
         max-width: 800px;
+        width: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -639,6 +647,9 @@ html {
         font-weight: 400;
         color: hsl(229, 8%, 60%);
         line-height: 30px;
+    }
+    .div8 {
+        font-size: 16px !important;
     }
     .border {
         border-bottom: 5px solid hsl(0, 94%, 66%);
@@ -679,6 +690,7 @@ html {
     .wrap {
         max-width: 400px;
         margin: 0 auto;
+        width: 100%;
         padding: 0 30px;
     }
     .div8 {
@@ -708,6 +720,7 @@ html {
 
 .div9 {
     max-width: 1550px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     height: 570px;
@@ -718,6 +731,7 @@ html {
     top: 0;
     display: flex;
     max-width: 1550px;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -740,6 +754,7 @@ html {
     top: 0;
     display: none;
     max-width: 1550px;
+    width: 100%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -799,6 +814,7 @@ html {
 @media screen and (max-width: 1320px) {
     .div9 {
         max-width: 1550px;
+        width: 100%;
         margin: 0 auto;
         position: relative;
         height: 570px;
@@ -807,6 +823,7 @@ html {
         position: absolute;
         top: 0;
         display: flex;
+        width: 100%;
         max-width: 1550px;
         margin: 0 auto;
         justify-content: center;
@@ -819,6 +836,7 @@ html {
         display: none;
         max-width: 1550px;
         margin: 0 auto;
+        width: 100%;
         justify-content: center;
         align-items: center;
         padding: 70px 100px 80px 100px;
@@ -828,6 +846,7 @@ html {
         top: 0;
         display: none;
         max-width: 1550px;
+        width: 100%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -887,6 +906,7 @@ html {
         max-width: 1550px;
         margin: 0 auto;
         position: relative;
+        width: 100%;
         height: 480px;
     }
     .div10 {
@@ -894,6 +914,7 @@ html {
         top: 0;
         display: flex;
         max-width: 1550px;
+        width: 100%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -902,6 +923,7 @@ html {
     .div11 {
         position: absolute;
         top: 0;
+        width: 100%;
         display: none;
         max-width: 1550px;
         margin: 0 auto;
@@ -914,6 +936,7 @@ html {
         top: 0;
         display: none;
         max-width: 1550px;
+        width: 100%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -951,6 +974,7 @@ html {
     .div9 {
         max-width: 400px;
         margin: 0 auto;
+        width: 100%;
         position: relative;
         height: 640px;
     }
@@ -961,6 +985,7 @@ html {
         flex-direction: column;
         max-width: 400px;
         margin: 0 auto;
+        width: 100%;
         justify-content: center;
         align-items: center;
         padding: 70px 30px 80px 30px;
@@ -970,6 +995,7 @@ html {
         top: 0;
         display: none;
         max-width: 400px;
+        width: 100%;
         flex-direction: column;
         margin: 0 auto;
         justify-content: center;
@@ -983,6 +1009,7 @@ html {
         max-width: 400px;
         flex-direction: column;
         margin: 0 auto;
+        width: 100%;
         justify-content: center;
         align-items: center;
         padding: 70px 30px 80px 30px;
@@ -1038,11 +1065,13 @@ html {
 
 .div16 {
     max-width: 1540px;
+    width: 100%;
     margin: 0 auto 70px auto;
 }
 
 .div17 {
     max-width: 700px;
+    width: 100%;
     margin: 130px auto 90px auto;
     padding: 0 30px
 }
@@ -1068,6 +1097,7 @@ html {
     margin: -80px auto 0 auto;
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -1128,16 +1158,19 @@ html {
 
 .div20 {
     max-width: 1540px;
+    width: 100%;
     margin: 170px auto 70px auto;
 }
 
 @media screen and (max-width: 1320px) {
     .div16 {
         max-width: 1540px;
+        width: 100%;
         margin: 0 auto 70px auto;
     }
     .div17 {
         max-width: 700px;
+        width: 100%;
         margin: 130px auto 90px auto;
         padding: 0 30px
     }
@@ -1159,6 +1192,7 @@ html {
         max-width: 1000px;
         margin: -80px auto 0 auto;
         display: flex;
+        width: 100%;
         align-items: center;
         justify-content: space-between;
     }
@@ -1233,6 +1267,7 @@ html {
         display: grid;
         grid-gap: 50px;
         padding: 0 50px;
+        width: 100%;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: space-between;
@@ -1260,11 +1295,13 @@ html {
     .div16 {
         max-width: 400px;
         margin: 0 auto 70px auto;
+        width: 100%;
         padding: 0 20px;
     }
     .div17 {
         max-width: 400px;
         margin: 130px auto 90px auto;
+        width: 100%;
         padding: 0 10px;
     }
     .div17 p:first-child {
@@ -1285,6 +1322,7 @@ html {
         max-width: 400px;
         margin: -20px auto 0 auto;
         display: grid;
+        width: 100%;
         padding: 0 30px;
         grid-template-columns: 1fr;
         grid-gap: 80px;
@@ -1342,10 +1380,12 @@ html {
 .div20 {
     max-width: 1540px;
     margin: 170px auto 70px auto;
+    width: 100%;
 }
 
 .div21 {
     max-width: 600px;
+    width: 100%;
     margin: 130px auto 60px auto;
 }
 
@@ -1368,6 +1408,7 @@ html {
 .div22 {
     max-width: 600px;
     margin: 0 auto;
+    width: 100%;
     border-top: 2px solid rgb(236, 229, 229);
 }
 
@@ -1433,10 +1474,12 @@ html {
 @media screen and (max-width: 1320px) {
     .div20 {
         max-width: 1540px;
+        width: 100%;
         margin: 170px auto 70px auto;
     }
     .div21 {
         max-width: 620px;
+        width: 100%;
         margin: 130px auto 60px auto;
     }
     .div21 p:first-child {
@@ -1456,6 +1499,7 @@ html {
     .div22 {
         max-width: 600px;
         margin: 0 auto;
+        width: 100%;
         border-top: 2px solid rgb(236, 229, 229);
     }
     .div23 {
@@ -1512,7 +1556,7 @@ html {
 @media screen and (max-width: 1050px) {
     .div21 p:first-child {
         margin: 0;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
         color: hsl(229, 31%, 21%);
     }
@@ -1524,15 +1568,23 @@ html {
         line-height: 30px;
         text-align: center;
     }
+    .answer {
+        font-size: 16px !important;
+    }
+    .div25 {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .div20 {
         max-width: 400px;
         margin: 170px auto 70px auto;
+        width: 100%;
     }
     .div21 {
         max-width: 400px;
+        width: 100%;
         margin: 130px auto 60px auto;
         padding: 0 30px;
     }
@@ -1555,6 +1607,7 @@ html {
         max-width: 400px;
         margin: 0 auto;
         padding: 0 30px;
+        width: 100%;
         border-top: none;
     }
     .div23 {
@@ -1621,6 +1674,7 @@ html {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+    width: 100%;
 }
 
 .div27 p:first-child {
@@ -1733,6 +1787,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     max-width: 1540px;
     margin: 0 auto;
 }
@@ -1794,6 +1849,7 @@ input::placeholder {
         max-width: 500px;
         margin: 0 auto;
         text-align: center;
+        width: 100%;
     }
     .div27 p:first-child {
         margin: 0;
@@ -1892,6 +1948,7 @@ input::placeholder {
         justify-content: space-between;
         align-items: center;
         max-width: 1540px;
+        width: 100%;
         margin: 0 auto;
     }
     .right {
@@ -2062,6 +2119,7 @@ input::placeholder {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        width: 100%;
         align-items: center;
         max-width: 400px;
         margin: 0 auto;
