@@ -1,0 +1,2114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    position: sticky;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 170px;
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+}
+
+.div1 p {
+    margin-right: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(229, 31%, 21%);
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.div1 p:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.div1 div {
+    padding: 13px 35px;
+    background: hsl(0, 94%, 66%);
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    border: 2px solid hsl(0, 94%, 66%);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.div1 div:hover {
+    background: white;
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+.div2 {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 70px 20px 170px;
+    position: relative;
+}
+
+.div3 {
+    width: 45%;
+}
+
+.div3 p {
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 30px;
+}
+
+.div3 p:first-child {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 60px;
+    color: hsl(229, 31%, 21%);
+}
+
+.bookmark-div {
+    display: flex;
+    align-items: center;
+}
+
+.bookmark-div div:first-child {
+    margin-right: 20px;
+    background: hsl(231, 69%, 60%);
+    color: white;
+    box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 13px 25px;
+    border-radius: 5px;
+    border: 2px solid hsl(231, 69%, 60%);
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.chro:hover {
+    background: white !important;
+    border: 2px solid hsl(231, 69%, 60%) !important;
+    color: hsl(231, 69%, 60%) !important;
+}
+
+.bookmark-div div:last-child {
+    margin-right: 20px;
+    background: hsl(210, 15%, 92%);
+    color: hsl(229, 8%, 60%);
+    padding: 13px 25px;
+    box-shadow: 0px 5px 5px hsl(235, 16%, 84%);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid hsl(210, 15%, 92%);
+    cursor: pointer;
+}
+
+.fire:hover {
+    background: white !important;
+    border: 2px solid hsl(229, 31%, 21%) !important;
+    color: hsl(229, 31%, 21%) !important;
+}
+
+.div4 {
+    width: 55%;
+}
+
+.div4 img {
+    width: 100%;
+}
+
+.div5 {
+    height: 350px;
+    width: 38%;
+    background-color: hsl(231, 69%, 60%);
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 0px 200px;
+}
+
+.mobile-div1 {
+    display: none;
+}
+
+.close,
+.open {
+    display: none;
+}
+
+@media screen and (max-width: 1320px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 40px 100px;
+        max-width: 1540px;
+        margin: 0 auto;
+    }
+    .div1 {
+        display: flex;
+        align-items: center;
+    }
+    .div1 p {
+        margin-right: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        color: hsl(229, 31%, 21%);
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div1 div {
+        padding: 13px 35px;
+        background: hsl(0, 94%, 66%);
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        border: 2px solid white;
+        border: 2px solid hsl(0, 94%, 66%);
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    .div2 {
+        width: 100%;
+        max-width: 1540px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0px 20px 100px;
+        position: relative;
+    }
+    .div3 {
+        width: 45%;
+    }
+    .div3 p {
+        margin: 30px 0 30px 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+    }
+    .div3 p:first-child {
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 55px;
+        color: hsl(229, 31%, 21%);
+    }
+    .bookmark-div {
+        display: flex;
+        align-items: center;
+    }
+    .bookmark-div div:first-child {
+        margin-right: 20px;
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 400;
+        font-size: 14px;
+        padding: 13px 23px;
+        border-radius: 5px;
+        border: 2px solid hsl(231, 69%, 60%);
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .bookmark-div div:last-child {
+        margin-right: 20px;
+        background: hsl(210, 15%, 92%);
+        color: hsl(229, 8%, 60%);
+        padding: 13px 23px;
+        box-shadow: 0px 5px 5px hsl(235, 16%, 84%);
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 2px solid hsl(210, 15%, 92%);
+        cursor: pointer;
+    }
+    .div4 {
+        width: 55%;
+    }
+    .div4 img {
+        width: 100%;
+    }
+    .div5 {
+        height: 350px;
+        width: 38%;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        border-radius: 0 0 0px 200px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 30px 50px;
+        max-width: 1540px;
+        margin: 0 auto;
+    }
+    .div2 {
+        width: 100%;
+        max-width: 1540px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0px 20px 50px;
+        position: relative;
+    }
+    .div3 p {
+        margin: 30px 0 30px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+    }
+    .div3 p:first-child {
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 48px;
+        color: hsl(229, 31%, 21%);
+    }
+    .div5 {
+        height: 300px;
+        width: 38%;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        border-radius: 0 0 0px 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 35px 30px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .div1 {
+        display: flex;
+        align-items: center;
+        display: none;
+    }
+    .img1 {
+        z-index: 1000000000000000;
+    }
+    .logo {
+        filter: opacity(0.5) drop-shadow(0 0 0 white);
+    }
+    .social {
+        position: absolute;
+        bottom: 70px;
+        left: 40%;
+        width: max-content;
+    }
+    .social img {
+        width: 30px;
+        transition: 0.3s all ease;
+    }
+    .social img:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 hsl(0, 94%, 66%));
+    }
+    .social img:first-child {
+        width: 30px;
+        margin-right: 20px;
+    }
+    .social img:last-child {
+        width: 30px;
+        margin-left: 20px;
+    }
+    .mobile-div1 {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        padding: 95px 0px 30px 0px;
+        width: 100%;
+        height: 100vh;
+        background: rgba(37, 43, 70, 0.9);
+        z-index: 10000;
+        border-top: 1px solid hsl(232, 11%, 42%);
+        display: none;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .drop {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 17px;
+        border-bottom: 1px solid hsl(232, 11%, 42%);
+    }
+    .wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    .drop p {
+        color: white;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 0;
+        transition: 0.3s all ease;
+    }
+    .drop p:hover {
+        color: hsl(0, 94%, 66%);
+    }
+    .open {
+        display: block;
+    }
+    .close {
+        display: none;
+        z-index: 10000000000000;
+    }
+    .drop-div {
+        border: 2px solid white;
+        color: white;
+        width: 100%;
+        font-size: 17px;
+        font-weight: 400;
+        margin: 25px auto 0 auto;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s all ease;
+    }
+    .drop-div:hover {
+        background: hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+    }
+    .div1 p {
+        margin-right: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        color: hsl(229, 31%, 21%);
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div1 div {
+        padding: 13px 35px;
+        background: hsl(0, 94%, 66%);
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        border: 2px solid white;
+        border: 2px solid hsl(0, 94%, 66%);
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    .div2 {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 30px 20px 30px;
+        position: relative;
+    }
+    .div3 {
+        width: 100%;
+    }
+    .div3 p {
+        margin: 20px 0 30px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 25px;
+        text-align: center;
+    }
+    .div3 p:first-child {
+        margin: 50px 0 0px 0;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 35px;
+        color: hsl(229, 31%, 21%);
+    }
+    .bookmark-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bookmark-div div:first-child {
+        margin-right: 20px;
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 400;
+        font-size: 10px;
+        padding: 14px 13px;
+        border-radius: 5px;
+        border: 2px solid hsl(231, 69%, 60%);
+        transition: 0.3s all ease;
+        cursor: pointer;
+        text-align: center;
+    }
+    .bookmark-div div:last-child {
+        margin-right: 20px;
+        background: hsl(210, 15%, 92%);
+        color: hsl(229, 8%, 60%);
+        padding: 14px 13px;
+        box-shadow: 0px 5px 5px hsl(235, 16%, 84%);
+        font-weight: 500;
+        font-size: 10px;
+        border-radius: 5px;
+        border: 2px solid hsl(210, 15%, 92%);
+        cursor: pointer;
+        text-align: center;
+    }
+    .div4 {
+        width: 100% !important;
+    }
+    .div4 img {
+        width: 100% !important;
+    }
+    .div5 {
+        height: 180px;
+        width: 76%;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        z-index: -1;
+        top: 15%;
+        right: 0;
+        border-radius: 0 0 0px 80px;
+    }
+}
+
+.div6 {
+    max-width: 600px;
+    margin: 80px auto 60px auto;
+    text-align: center;
+}
+
+.div6 p:first-child {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+}
+
+.div6 p {
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 30px;
+}
+
+.div7 {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid rgb(236, 229, 229);
+}
+
+.div8 {
+    padding: 30px;
+    text-align: center;
+    color: hsl(229, 8%, 60%);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.3s all ease;
+    border-bottom: 5px solid white;
+    cursor: pointer;
+}
+
+.div8:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.border {
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+    color: hsl(229, 31%, 21%);
+}
+
+.bord {
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+    color: hsl(229, 31%, 21%);
+}
+
+@media screen and (max-width: 1320px) {
+    .div6 {
+        max-width: 630px;
+        margin: 80px auto 60px auto;
+        text-align: center;
+    }
+    .div6 p:first-child {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div6 p {
+        margin: 30px 0 30px 0;
+        font-size: 17px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+    }
+    .div7 {
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 2px solid rgb(236, 229, 229);
+    }
+    .div8 {
+        padding: 25px;
+        text-align: center;
+        color: hsl(229, 8%, 60%);
+        font-weight: 500;
+        font-size: 17px;
+        transition: 0.3s all ease;
+        border-bottom: 5px solid white;
+        cursor: pointer;
+    }
+    .border {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+        color: hsl(229, 31%, 21%);
+    }
+    .bord {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+        color: hsl(229, 31%, 21%);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .div6 p {
+        margin: 30px 0 30px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+    }
+    .border {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+        color: hsl(229, 31%, 21%);
+    }
+    .bord {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+        color: hsl(229, 31%, 21%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div6 {
+        max-width: 400px;
+        width: 100%;
+        margin: 120px auto 60px auto;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .div6 p:first-child {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div6 p {
+        margin: 15px 0 20px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 25px;
+    }
+    .div7 {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom: 2px solid rgb(236, 229, 229);
+    }
+    .wrap {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    .div8 {
+        padding: 15px 0;
+        text-align: center;
+        color: hsl(229, 8%, 60%);
+        font-weight: 400;
+        font-size: 17px;
+        transition: 0.3s all ease;
+        border-bottom: 5px solid white;
+        cursor: pointer;
+        width: 163px;
+        margin: 0 auto;
+    }
+    .borde {
+        border-top: 2px solid rgb(236, 229, 229);
+    }
+    .border {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+        color: hsl(229, 31%, 21%);
+    }
+    .bord {
+        border-bottom: 5px solid hsl(0, 94%, 66%);
+        color: hsl(229, 31%, 21%);
+    }
+}
+
+.div9 {
+    max-width: 1550px;
+    margin: 0 auto;
+    position: relative;
+    height: 570px;
+}
+
+.div10 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    max-width: 1550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 170px 80px 170px;
+}
+
+.div11 {
+    position: absolute;
+    top: 0;
+    display: none;
+    max-width: 1550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 170px 80px 170px;
+}
+
+.div12 {
+    position: absolute;
+    top: 0;
+    display: none;
+    max-width: 1550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 170px 80px 170px;
+}
+
+.div13 {
+    width: 55%;
+    margin-right: 130px;
+}
+
+.div13 img {
+    width: 100%;
+    height: 370px;
+}
+
+.div14 {
+    width: 45%;
+}
+
+.div14 p {
+    margin: 30px 0 30px 0;
+    font-size: 19px;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 30px;
+}
+
+.div14 p:first-child {
+    font-size: 37px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+}
+
+.div14 div {
+    background: hsl(231, 69%, 60%);
+    color: white;
+    box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 18px 27px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.div15 {
+    height: 350px;
+    width: 45%;
+    background-color: hsl(231, 69%, 60%);
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 200px 0px;
+}
+
+@media screen and (max-width: 1320px) {
+    .div9 {
+        max-width: 1550px;
+        margin: 0 auto;
+        position: relative;
+        height: 570px;
+    }
+    .div10 {
+        position: absolute;
+        top: 0;
+        display: flex;
+        max-width: 1550px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 100px 80px 100px;
+    }
+    .div11 {
+        position: absolute;
+        top: 0;
+        display: none;
+        max-width: 1550px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 100px 80px 100px;
+    }
+    .div12 {
+        position: absolute;
+        top: 0;
+        display: none;
+        max-width: 1550px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 100px 80px 100px;
+    }
+    .div13 {
+        width: 55%;
+        margin-right: 130px;
+    }
+    .div13 img {
+        width: 100%;
+        height: 370px;
+    }
+    .div14 {
+        width: 45%;
+    }
+    .div14 p {
+        margin: 30px 0 30px 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+    }
+    .div14 p:first-child {
+        font-size: 30px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div14 div {
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 500;
+        font-size: 14px;
+        padding: 17px 27px;
+        border-radius: 5px;
+        width: max-content;
+    }
+    .div15 {
+        height: 350px;
+        width: 45%;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 200px 0px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .div13 img {
+        width: 100%;
+        height: 300px;
+    }
+    .div9 {
+        max-width: 1550px;
+        margin: 0 auto;
+        position: relative;
+        height: 480px;
+    }
+    .div10 {
+        position: absolute;
+        top: 0;
+        display: flex;
+        max-width: 1550px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 50px 80px 50px;
+    }
+    .div11 {
+        position: absolute;
+        top: 0;
+        display: none;
+        max-width: 1550px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 50px 80px 50px;
+    }
+    .div12 {
+        position: absolute;
+        top: 0;
+        display: none;
+        max-width: 1550px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 50px 80px 50px;
+    }
+    .div15 {
+        height: 300px;
+        width: 45%;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 200px 0px;
+    }
+    .div13 {
+        width: 55%;
+        margin-right: 100px;
+    }
+    .div14 p {
+        margin: 30px 0 30px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+    }
+    .div14 p:first-child {
+        font-size: 28px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div9 {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+        height: 640px;
+    }
+    .div10 {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 30px 80px 30px;
+    }
+    .div11 {
+        position: absolute;
+        top: 0;
+        display: none;
+        max-width: 400px;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 30px 80px 30px;
+    }
+    .div12 {
+        position: absolute;
+        top: 0;
+        display: none;
+        max-width: 400px;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 30px 80px 30px;
+    }
+    .div13 {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .div13 img {
+        width: 100%;
+        height: 290px;
+    }
+    .div14 {
+        width: 100%;
+    }
+    .div14 p {
+        margin: 10px 0 30px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 25px;
+        text-align: center;
+    }
+    .div14 p:first-child {
+        margin-top: 100px;
+        margin-bottom: 0;
+        font-size: 25px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div14 div {
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 500;
+        font-size: 14px;
+        padding: 17px 27px;
+        border-radius: 5px;
+        width: max-content;
+        display: none;
+    }
+    .div15 {
+        height: 220px;
+        width: 82%;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        z-index: -1;
+        bottom: 42%;
+        left: 0;
+        border-radius: 0 0 100px 0px;
+    }
+}
+
+.div16 {
+    max-width: 1540px;
+    margin: 0 auto 70px auto;
+}
+
+.div17 {
+    max-width: 700px;
+    margin: 130px auto 90px auto;
+    padding: 0 30px
+}
+
+.div17 p:first-child {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+}
+
+.div17 p {
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 30px;
+    text-align: center;
+}
+
+.div18 {
+    max-width: 1000px;
+    margin: -80px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div19 {
+    text-align: center;
+    width: 31%;
+    padding: 30px;
+    background-image: url("./images/bg-dots.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 72%;
+    box-shadow: 0px 6px 7px hsl(232, 42%, 90%);
+    border-radius: 17px;
+}
+
+.p1 {
+    margin: 30px 0 0 0 !important;
+    font-size: 23px !important;
+    font-weight: 600 !important;
+    color: hsl(229, 31%, 21%) !important;
+}
+
+.div19 p {
+    margin: 5px 0 70px 0;
+    font-size: 17px;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 30px;
+    text-align: center;
+}
+
+.div19 div {
+    background: hsl(231, 69%, 60%);
+    color: white;
+    box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 15px 27px;
+    border-radius: 5px;
+    border: 2px solid hsl(231, 69%, 60%);
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.div19 div:hover {
+    background: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+#div19 {
+    margin-top: 80px;
+}
+
+#div20 {
+    margin-top: 160px;
+}
+
+.div20 {
+    max-width: 1540px;
+    margin: 170px auto 70px auto;
+}
+
+@media screen and (max-width: 1320px) {
+    .div16 {
+        max-width: 1540px;
+        margin: 0 auto 70px auto;
+    }
+    .div17 {
+        max-width: 700px;
+        margin: 130px auto 90px auto;
+        padding: 0 30px
+    }
+    .div17 p:first-child {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div17 p {
+        margin: 30px 0 30px 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+    .div18 {
+        max-width: 1000px;
+        margin: -80px auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .div19 {
+        text-align: center;
+        width: 31%;
+        padding: 20px;
+        background-image: url("./images/bg-dots.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0% 72%;
+        box-shadow: 0px 6px 7px hsl(232, 42%, 90%);
+        border-radius: 17px;
+    }
+    .p1 {
+        margin: 30px 0 0 0 !important;
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        color: hsl(229, 31%, 21%) !important;
+    }
+    .div19 p {
+        margin: 5px 0 70px 0;
+        font-size: 17px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+    .div19 div {
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 500;
+        font-size: 15px;
+        padding: 15px 27px;
+        border-radius: 5px;
+        border: 2px solid hsl(231, 69%, 60%);
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div19 div:hover {
+        background: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+    #div19 {
+        margin-top: 80px;
+    }
+    #div20 {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .div17 p:first-child {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div17 p {
+        margin: 30px 0 30px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+    .div18 {
+        max-width: 100%;
+        margin: -330px auto 0 auto;
+        display: grid;
+        grid-gap: 50px;
+        padding: 0 50px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .div19 {
+        text-align: center;
+        width: 100%;
+        padding: 40px;
+        background-image: url("./images/bg-dots.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0% 70%;
+        box-shadow: 0px 6px 7px hsl(232, 42%, 90%);
+        border-radius: 17px;
+    }
+    #div19 {
+        margin-top: 600px;
+    }
+    #div20 {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div16 {
+        max-width: 400px;
+        margin: 0 auto 70px auto;
+        padding: 0 20px;
+    }
+    .div17 {
+        max-width: 400px;
+        margin: 130px auto 90px auto;
+        padding: 0 10px;
+    }
+    .div17 p:first-child {
+        margin: 0;
+        font-size: 23px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+    }
+    .div17 p {
+        margin: 15px 0 30px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 25px;
+        text-align: center;
+    }
+    .div18 {
+        max-width: 400px;
+        margin: -20px auto 0 auto;
+        display: grid;
+        padding: 0 30px;
+        grid-template-columns: 1fr;
+        grid-gap: 80px;
+    }
+    .div19 {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        background-image: url("./images/bg-dots.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0% 72%;
+        box-shadow: 0px 6px 7px hsl(232, 42%, 90%);
+        border-radius: 17px;
+    }
+    .p1 {
+        margin: 30px 0 0 0 !important;
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        color: hsl(229, 31%, 21%) !important;
+    }
+    .div19 p {
+        margin: 5px 0 70px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+    .div19 div {
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 500;
+        font-size: 13px;
+        padding: 15px 27px;
+        border-radius: 5px;
+        border: 2px solid hsl(231, 69%, 60%);
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div19 div:hover {
+        background: white;
+        color: hsl(231, 69%, 60%);
+        border: 2px solid hsl(231, 69%, 60%);
+    }
+    #div19 {
+        margin-top: 0px;
+    }
+    #div20 {
+        margin-top: 0px;
+    }
+}
+
+.div20 {
+    max-width: 1540px;
+    margin: 170px auto 70px auto;
+}
+
+.div21 {
+    max-width: 600px;
+    margin: 130px auto 60px auto;
+}
+
+.div21 p:first-child {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: hsl(229, 31%, 21%);
+}
+
+.div21 p {
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 30px;
+    text-align: center;
+}
+
+.div22 {
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 2px solid rgb(236, 229, 229);
+}
+
+.div23 {
+    border-bottom: 2px solid rgb(236, 229, 229);
+}
+
+.div24 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.div24:hover .divp {
+    color: hsl(0, 94%, 66%);
+}
+
+.div24 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(229, 31%, 21%);
+    margin: 20px 0 20px 0;
+    transition: 0.3s all ease;
+}
+
+.answer {
+    margin: 20px 0 30px 0;
+    line-height: 35px;
+    font-size: 18px !important;
+    color: hsl(229, 8%, 60%);
+    font-size: 17px;
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+.arrow {
+    transition: 0.3s all ease;
+    color: hsl(231, 69%, 60%);
+}
+
+.rotate {
+    color: hsl(0, 94%, 66%);
+    transform: rotate(180deg);
+}
+
+.div25 {
+    background: hsl(231, 69%, 60%);
+    color: white;
+    box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+    font-weight: 500;
+    font-size: 15px;
+    width: max-content;
+    margin: 70px auto 0 auto;
+    padding: 16px 27px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1320px) {
+    .div20 {
+        max-width: 1540px;
+        margin: 170px auto 70px auto;
+    }
+    .div21 {
+        max-width: 620px;
+        margin: 130px auto 60px auto;
+    }
+    .div21 p:first-child {
+        margin: 0;
+        font-size: 32px;
+        font-weight: 600;
+        color: hsl(229, 31%, 21%);
+    }
+    .div21 p {
+        margin: 30px 0 30px 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+    .div22 {
+        max-width: 600px;
+        margin: 0 auto;
+        border-top: 2px solid rgb(236, 229, 229);
+    }
+    .div23 {
+        border-bottom: 2px solid rgb(236, 229, 229);
+    }
+    .div24 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    .div24:hover .divp {
+        color: hsl(0, 94%, 66%);
+    }
+    .div24 p {
+        font-size: 20px;
+        font-weight: 400;
+        color: hsl(229, 31%, 21%);
+        margin: 20px 0 20px 0;
+        transition: 0.3s all ease;
+    }
+    .answer {
+        margin: 20px 0 30px 0;
+        line-height: 35px;
+        font-size: 18px !important;
+        color: hsl(229, 8%, 60%);
+        font-size: 17px;
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+    .arrow {
+        transition: 0.3s all ease;
+    }
+    .rotate {
+        color: hsl(0, 94%, 66%);
+        transform: rotate(180deg);
+    }
+    .div25 {
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 500;
+        font-size: 15px;
+        width: max-content;
+        margin: 70px auto 0 auto;
+        padding: 16px 27px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .div21 p:first-child {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 600;
+        color: hsl(229, 31%, 21%);
+    }
+    .div21 p {
+        margin: 30px 0 30px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div20 {
+        max-width: 400px;
+        margin: 170px auto 70px auto;
+    }
+    .div21 {
+        max-width: 400px;
+        margin: 130px auto 60px auto;
+        padding: 0 30px;
+    }
+    .div21 p:first-child {
+        margin: 0;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 600;
+        color: hsl(229, 31%, 21%);
+    }
+    .div21 p {
+        margin: 15px 0 30px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(229, 8%, 60%);
+        line-height: 30px;
+        text-align: center;
+    }
+    .div22 {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 30px;
+        border-top: none;
+    }
+    .div23 {
+        border-bottom: 2px solid rgb(236, 229, 229);
+    }
+    .div24 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+    .div24:hover .divp {
+        color: hsl(0, 94%, 66%);
+    }
+    .div24 p {
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(229, 31%, 21%);
+        margin: 20px 0 20px 0;
+        transition: 0.3s all ease;
+    }
+    .answer {
+        margin: 5px 0 30px 0;
+        line-height: 25px;
+        font-size: 14px !important;
+        color: hsl(229, 8%, 60%);
+        font-size: 17px;
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+    .arrow {
+        transition: 0.3s all ease;
+    }
+    .rotate {
+        color: hsl(0, 94%, 66%);
+        transform: rotate(180deg);
+    }
+    .div25 {
+        background: hsl(231, 69%, 60%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 66%, 82%);
+        font-weight: 500;
+        font-size: 17px;
+        width: max-content;
+        margin: 60px auto 0 auto;
+        padding: 20px 35px !important;
+        border-radius: 5px;
+    }
+}
+
+.div26 {
+    width: 100%;
+    background: hsl(231, 69%, 60%);
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    padding: 70px 50px;
+}
+
+.div27 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.div27 p:first-child {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.div27 p {
+    margin: 30px 0 30px 0;
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+#input {
+    color: hsl(229, 31%, 21%);
+    font-weight: 600;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+input::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+}
+
+.form button {
+    background: hsl(0, 94%, 66%);
+    color: white;
+    box-shadow: 0px 1px 10px hsl(231, 48%, 52%);
+    font-weight: 600;
+    border: 2px solid hsl(0, 94%, 66%);
+    outline: none;
+    font-size: 14px;
+    padding: 13px 27px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.form button:hover {
+    background: white;
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+.error-div {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    text-align: left;
+    width: 70%;
+    padding: 7px 10px;
+    font-size: 10px;
+    border-radius: 0 0 5px 5px;
+    background: hsl(0, 94%, 66%);
+    display: none;
+}
+
+.input-div {
+    background: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.input-div img {
+    display: none;
+}
+
+.error {
+    display: block;
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+.show {
+    display: block !important;
+}
+
+.red {
+    border: 2px solid hsl(0, 94%, 66%) !important;
+}
+
+.div28 {
+    background: hsl(229, 31%, 21%);
+    padding: 30px 170px;
+}
+
+.div29 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.div30 {
+    display: flex;
+    align-items: center;
+}
+
+.div30 p {
+    margin-left: 60px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 80%;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.div30 p:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.div31 {
+    display: flex;
+    align-items: center;
+}
+
+.div31 img {
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.div31 img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 hsl(0, 94%, 66%));
+}
+
+.div31 img:first-child {
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1320px) {
+    .div26 {
+        width: 100%;
+        background: hsl(231, 69%, 60%);
+        color: white;
+        margin-top: 150px;
+        margin-bottom: 0px;
+        padding: 70px 50px;
+    }
+    .div27 {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .div27 p:first-child {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .div27 p {
+        margin: 30px 0 30px 0;
+        font-size: 34px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+    .form {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-gap: 20px;
+        width: 100%;
+        position: relative;
+    }
+    #input {
+        color: hsl(229, 31%, 21%);
+        font-weight: 600;
+        outline: none;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        width: 80%;
+    }
+    input::placeholder {
+        font-weight: 500;
+        font-size: 18px;
+        color: hsl(229, 8%, 60%);
+    }
+    .form button {
+        background: hsl(0, 94%, 66%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 48%, 52%);
+        font-weight: 600;
+        border: 2px solid hsl(0, 94%, 66%);
+        outline: none;
+        font-size: 14px;
+        padding: 13px 27px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    .form button:hover {
+        background: white;
+        color: hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+    }
+    .error-div {
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        text-align: left;
+        width: 70%;
+        padding: 7px 10px;
+        font-size: 10px;
+        border-radius: 0 0 5px 5px;
+        background: hsl(0, 94%, 66%);
+        display: none;
+    }
+    .input-div {
+        background: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        width: 100%;
+    }
+    .input-div img {
+        display: none;
+    }
+    .error {
+        display: block;
+        border: 2px solid hsl(0, 94%, 66%);
+    }
+    .show {
+        display: block !important;
+    }
+    .red {
+        border: 2px solid hsl(0, 94%, 66%) !important;
+    }
+    .div28 {
+        background: hsl(229, 31%, 21%);
+        padding: 30px 100px;
+    }
+    .div29 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1540px;
+        margin: 0 auto;
+    }
+    .right {
+        display: flex;
+        align-items: center;
+    }
+    .div30 {
+        display: flex;
+        align-items: center;
+    }
+    .div30 p {
+        margin-left: 60px;
+        color: white;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        opacity: 80%;
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div30 p:hover {
+        color: hsl(0, 94%, 66%);
+    }
+    .div31 {
+        display: flex;
+        align-items: center;
+    }
+    .div31 img {
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div31 img:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 hsl(0, 94%, 66%));
+    }
+    .div31 img:first-child {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .div27 p {
+        margin: 30px 0 30px 0;
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+    .div28 {
+        background: hsl(229, 31%, 21%);
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div26 {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 100%;
+        background: hsl(231, 69%, 60%);
+        color: white;
+        margin-top: 150px;
+        margin-bottom: 0px;
+        padding: 70px 0px 40px 0;
+    }
+    .div27 {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .div27 p:first-child {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .div27 p {
+        margin: 10px 0 30px 0;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+    }
+    #input {
+        color: hsl(229, 31%, 21%);
+        font-weight: 600;
+        outline: none;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        width: 80%;
+    }
+    input::placeholder {
+        font-weight: 500;
+        font-size: 18px;
+        color: hsl(229, 8%, 60%);
+    }
+    .form button {
+        background: hsl(0, 94%, 66%);
+        color: white;
+        box-shadow: 0px 1px 10px hsl(231, 48%, 52%);
+        font-weight: 600;
+        border: 2px solid hsl(0, 94%, 66%);
+        outline: none;
+        font-size: 17px;
+        padding: 14px 27px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+    }
+    .form button:hover {
+        background: white;
+        color: hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+    }
+    .error-div {
+        position: absolute;
+        bottom: 77px;
+        left: 0;
+        text-align: left;
+        width: 100%;
+        padding: 7px 10px;
+        font-size: 10px;
+        border-radius: 0 0 5px 5px;
+        background: hsl(0, 94%, 66%);
+        display: none;
+    }
+    .input-div {
+        background: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        width: 100%;
+    }
+    .input-div img {
+        display: none;
+    }
+    .error {
+        display: block;
+        border: 2px solid hsl(0, 94%, 66%);
+    }
+    .show {
+        display: block !important;
+    }
+    .red {
+        border: 2px solid hsl(0, 94%, 66%) !important;
+    }
+    .div28 {
+        background: hsl(229, 31%, 21%);
+        padding: 50px 30px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .div29 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div30 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right img {
+        margin-bottom: 20px;
+        width: 180px;
+        filter: opacity(0.5) drop-shadow(0 0 0 white);
+    }
+    .div30 p {
+        margin: 40px 0 0 0;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        opacity: 80%;
+        transition: 0.3s all ease;
+        cursor: pointer;
+    }
+    .div30 p:hover {
+        color: hsl(0, 94%, 66%);
+    }
+    .div31 {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .div31 img {
+        transition: 0.3s all ease;
+        cursor: pointer;
+        width: 30px;
+    }
+    .div31 img:hover {
+        filter: opacity(0.5) drop-shadow(0 0 0 hsl(0, 94%, 66%));
+    }
+    .div31 img:first-child {
+        margin-right: 60px;
+    }
+}
